@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.operator {
+    background: #764ba2;
+    color: white;
+}
+
+.equal {
+    background: #667eea;
+    color: white;
+}
+
+.clear {
+    background: #ff4d4d;
+    color: white;
+}
+.dark {
+    background: #121212;
+}
+
+.dark .calculator {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark #display {
+    background: #333;
+    color: white;
+}
+
+.dark button {
+    background: #333;
+    color: white;
+}
+.history {
+    margin-top: 20px;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.history h3 {
+    text-align: center;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+
+#historyList li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
